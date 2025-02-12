@@ -40,7 +40,7 @@ const Experience = () => {
   return (
     <div className="flex w-full flex-col items-center">
       <p className="self-start text-xl">Experience 💼</p>
-      <Accordion type="single" collapsible className="w-full" defaultValue="3">
+      <Accordion type="single" collapsible className="w-full">
         {items.map((item) => (
           <AccordionItem value={item.id} key={item.id} className="py-2">
             <AccordionPrimitive.Header className="flex">
