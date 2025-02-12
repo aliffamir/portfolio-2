@@ -4,12 +4,12 @@ import { CiMail } from 'react-icons/ci';
 const Footer = () => {
   const links = [
     {
-      href: 'https://github.com/your-profile',
+      href: 'https://github.com/aliffamir',
       label: 'GitHub',
       icon: <FaGithub size={20} />,
     },
     {
-      href: 'https://linkedin.com/in/your-profile',
+      href: 'https://www.linkedin.com/in/aliffamir/',
       label: 'LinkedIn',
       icon: <FaLinkedin size={20} />,
     },
