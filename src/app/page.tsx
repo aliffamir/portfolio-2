@@ -1,6 +1,7 @@
 'use client';
 
 import Experience from '@/components/experience';
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Intro from '@/components/intro';
 import Projects from '@/components/projects';
@@ -14,6 +15,7 @@ export default function Home() {
         <Intro />
         <Experience />
         <Projects />
+        <Footer />
       </main>
     </div>
   );
