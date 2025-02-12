@@ -28,7 +28,7 @@ const Footer = () => {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center space-x-2 text-muted-foreground transition-colors duration-200 hover:text-black"
+          className="flex items-center space-x-2 text-muted-foreground transition-colors duration-200 hover:text-inherit"
         >
           {link.icon}
           <span className="text-lg">{link.label}</span>
