@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="w-full">
-      <div className="flex w-full justify-between bg-blue-50">
+      <div className="flex w-full justify-between">
         <span className="text-2xl font-bold">Aliff Amir</span>
         <div className="flex gap-3">
           <span>projects</span>
