@@ -90,8 +90,13 @@ const Intro = () => {
             className="rounded-full border-2"
           />
           <div>
-            <h1 className="text-xl font-semibold">Hello, I'm Aliff.</h1>
-            <p className="text-sm">Incoming IT Developer Graduate at RWE Supply & Trading</p>
+            <h1 className="text-xl font-semibold">Hey, I'm Aliff 👋</h1>
+            <div className="text-md flex items-center space-x-2">
+              <span className="relative flex h-2 w-2">
+                <div className="h-2 w-2 rounded-full bg-red-500"></div>
+              </span>
+              <p>Not actively looking for new opportunities at this time</p>
+            </div>
           </div>
         </div>
       </div>
@@ -99,7 +104,7 @@ const Intro = () => {
       {/* Intro Content */}
       <div className="">
         <p>
-          I'm a versatile software engineer with experience in web development, currently diving
+          I'm a full-stack software engineer with experience in web development, currently diving
           into the world of quantitative development. My passion is building solutions that solve
           real-world problems.
         </p>

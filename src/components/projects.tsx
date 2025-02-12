@@ -1,21 +1,21 @@
-"use client ";
-import { cn } from "@/lib/utils";
-import React, { useState } from "react";
+'use client ';
+import { cn } from '@/lib/utils';
+import React, { useState } from 'react';
 import {
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
-} from "@tabler/icons-react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import { Button } from "./ui/button";
+} from '@tabler/icons-react';
+import { BentoGrid, BentoGridItem } from './ui/bento-grid';
+import { Button } from './ui/button';
 
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
     <div className="flex flex-col items-center">
-      <p className="pb-3 text-xl self-start">Featured projects 🏗️</p>
+      <p className="self-start pb-3 text-xl">Featured projects 🏗️</p>
       <BentoGrid className="grid grid-cols-2 gap-4">
         {(showMore ? items : items.slice(0, 4)).map((item, i) => (
           <BentoGridItem
@@ -28,12 +28,8 @@ const Projects = () => {
           />
         ))}
       </BentoGrid>
-      <Button
-        variant="outline"
-        className="mt-5"
-        onClick={() => setShowMore((prev) => !prev)}
-      >
-        {showMore ? "Show Less" : "Show More"}
+      <Button variant="outline" className="mt-5" onClick={() => setShowMore((prev) => !prev)}>
+        {showMore ? 'Show Less' : 'Show More'}
       </Button>
     </div>
   );
@@ -43,48 +39,45 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: 'The Dawn of Innovation',
+    description: 'Explore the birth of groundbreaking ideas and inventions.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: 'The Digital Revolution',
+    description: 'Dive into the transformative power of technology.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: 'The Art of Design',
+    description: 'Discover the beauty of thoughtful and functional design.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: 'The Power of Communication',
+    description: 'Understand the impact of effective communication in our lives.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: 'The Power of Communication',
+    description: 'Understand the impact of effective communication in our lives.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: 'The Power of Communication',
+    description: 'Understand the impact of effective communication in our lives.',
     header: <Skeleton />,
-    className: "",
+    className: '',
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 ];
